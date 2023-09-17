@@ -1,18 +1,16 @@
-# create-svelte
+# Setup a new Site
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+1. use this template to create a new repo
+2. Set the secrets:
+   2.1. CYON_KEY: create new ssh-key, add public key in cyon
+   2.2. SSH_HOST: is the cyon server to connect to.
+   2.3. SSH_USER: is the cyon admin user
+   2.4. SSH_PATH: is the path on the folder: ~/public_html/\_domain-name
+3. Set the Variables:
+   This is just the PUBLIC_MAPTILER_TOKEN - found here: https://cloud.maptiler.com/account/keys/
+4. To enable syncing with the template change the Workflow permissions here: https://github.com/<gh-user>/<repo>/settings/actions
+5. Go live in setting the ENV-Variable PUBLIC_DEVMODE to false in this file: /.github/workflows/main.yml (That's for search-engines)
+6. Enable the Push on the cyon-server on git-push by changing the main-workflow.
 
 ## Developing
 

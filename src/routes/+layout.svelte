@@ -20,6 +20,7 @@
 	<meta name="robots" content={PUBLIC_DEVMODE === 'true' ? 'noindex, nofollow' : 'index, follow'} />
 	<html lang="de" />
 </svelte:head>
+
 <Head {title} menuData={menuContent} {br} />
 <main>
 	<slot />
